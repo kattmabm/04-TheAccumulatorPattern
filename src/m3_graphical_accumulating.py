@@ -96,7 +96,7 @@ def draw_parallel_lines(n, point, length, window):
       :type window: rg.RoseWindow
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
@@ -120,7 +120,7 @@ def draw_parallel_lines(n, point, length, window):
         end_point.y += 30
 
     window.render()
-    window.close_on_mouse_click()
+
 
 
 

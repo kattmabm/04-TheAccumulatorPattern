@@ -188,6 +188,18 @@ def draw_lines(n, point, window):
     ####################################################################
     # ------------------------------------------------------------------
 
+    end = 100
+    modifier = int(200 / n)
+
+    for i in range(n):
+        end_point = rg.Point(point.x + 100, point.y + end)
+        line = rg.Line(point, end_point)
+        line.attach_to(window)
+        end -= modifier
+
+    window.render()
+
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
